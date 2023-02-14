@@ -1,4 +1,4 @@
-<h1 style="text-align: center;">**How to launch instances**</h1>
+<h2 style="text-align: center;">How to launch instances</h2>
 
 ```ansible-playbook ec2-launch-detailed.yaml```
 
@@ -20,7 +20,7 @@ The task 'Configure instances' is equal to setting the **user data** on the Amaz
 
 ***
 
-<h1 style="text-align: center;">**How to copy files to the running instances**</h1>
+<h2 style="text-align: center;">**How to copy files to the running instances**</h2>
 
 ```ansible-playbook -i aws_ec2.yml copy_files.yaml```
 
