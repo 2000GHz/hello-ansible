@@ -1,14 +1,14 @@
-<center>--- How to launch instances ---</center>
+<h1 style="text-align: center;">**How to launch instances**</h1>
 
-ansible-playbook ec2-launch-detailed.yaml 
+```ansible-playbook ec2-launch-detailed.yaml```
 
-The file ec2-launch-detailed.yaml doesn't require an inventory because it is running only under localhost (Declared within itself)
+The file _ec2-launch-detailed.yaml_ doesn't require an inventory because it is running only under **localhost** (Declared within itself)
 
 This will launch n amount of instances (Adjustable by switching the count variable under the 'Launch instance' task)
 
 The different settings of said instances are declared on the 'vars' section at the start of the file
 
-We can tag the created instances in the appropriately named section, ie:
+We can tag the created instances in the appropriately named section, IE:
 
             ```tags:
                     Name: InstanceName
@@ -20,7 +20,7 @@ The task 'Configure instances' is equal to setting the **user data** on the Amaz
 
 ***
 
-<center>--- How to copy files to the running instances ---</center>
+<h1 style="text-align: center;">**How to copy files to the running instances**</h1>
 
 ```ansible-playbook -i aws_ec2.yml copy_files.yaml```
 
